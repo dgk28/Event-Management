@@ -1,0 +1,66 @@
+/* General styles for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the form */
+.event-create-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title */
+.event-create-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input fields styling */
+.event-create-container input[type="text"],
+.event-create-container input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.event-create-container input[type="text"]:focus,
+.event-create-container input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styling */
+.event-create-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-create-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Add some margin to form elements for better spacing */
+.event-create-container input,
+.event-create-container button {
+    margin-top: 10px;
+}

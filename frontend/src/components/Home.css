@@ -1,0 +1,87 @@
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Container for the homepage */
+.homepage-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Title style */
+.homepage-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Button styles */
+.homepage-container .btn {
+    background-color: #833ab4;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.homepage-container .btn:hover {
+    background-color: #fd1d1d;
+    transform: scale(1.05);
+}
+
+/* Split buttons for login and register */
+.split-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.split-container .btn {
+    flex-grow: 1;
+}
+
+/* Adjust button size on smaller devices */
+@media (max-width: 400px) {
+    .homepage-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .split-container {
+        flex-direction: column;
+    }
+}
+
+/* Text for welcome or instruction */
+.homepage-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
